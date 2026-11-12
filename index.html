@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#10090b" name="theme-color"/>
+<meta content="Ciudad Sangrienta: dos videojuegos 3D en un portal. Corre por una ciudad distópica y escapa de un laberinto mientras dos enemigos te persiguen. Juegos Unity WebGL integrados." name="description"/>
+<title>CIUDAD SANGRIENTA | Portal Oficial · Runner + Laberinto</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div aria-hidden="true" class="noise"></div>
+<div aria-hidden="true" class="blood-top"></div>
+<header class="header" id="inicio">
+<a aria-label="Ciudad Sangrienta - inicio" class="brand" href="#inicio"><span class="brand-mark">✕</span> CIUDAD<span>SANGRIENTA</span><small>PABLO ZACONETA · DEV</small></a>
+<button aria-expanded="false" aria-label="Abrir menú" class="menu-toggle" type="button">☰</button>
+<nav aria-label="Menú principal" class="nav"><a href="#inicio">Inicio</a><a href="#seleccionar-juego">Juegos</a><a href="#historia">Historia</a><a href="#mecanicas">Mecánicas</a><a class="nav-play" href="#jugar">Juego 1</a><a class="nav-maze-game" href="#laberinto-jugar">Juego 2</a></nav>
+</header>
+<main>
+<section aria-labelledby="hero-title" class="hero section">
+<div class="city-bg"></div><div class="hero-red-glow"></div>
+<div class="container hero-layout">
+<div class="hero-text reveal">
+<div aria-label="Identidad del desarrollador del portal" class="developer-identity"><span>HEAD · DESARROLLADOR DEL PORTAL</span><strong>PABLO ALEJANDRO ZACONETA GUANCA</strong></div>
+<p class="eyebrow">PORTAL DE VIDEOJUEGOS 3D  /  GAME DEVELOPMENT  /  UNIDAD 4</p>
+<h1 id="hero-title">LA CIUDAD<br/><span class="blood-text">SANGRIENTA</span></h1>
+<p class="hero-sub">DOS JUEGOS. UNA SOLA CIUDAD.</p>
+<p class="lead">Explora dos desafíos del mismo universo: una carrera entre las ruinas y un laberinto vigilado por enemigos. Elige una misión y juégala aquí, sin salir de este portal.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#seleccionar-juego">↓ ELEGIR VIDEOJUEGO</a><a class="btn btn-ghost" href="#historia">CONOCER EL PROYECTO</a></div>
+<div class="mini-stats"><div><b>02</b><span>JUEGOS WEBGL</span></div><div><b>01</b><span>MISMO PORTAL</span></div><div><b>START</b><span>INICIO MANUAL</span></div></div>
+</div>
+<div aria-label="Ilustración del protagonista" class="hero-art reveal"><div class="hazard-circle"></div><img alt="Protagonista de cabello verde, sonrisa inquietante, chaleco oscuro y botas" src="assets/protagonista.png"/><div class="art-serial">SUJETO // 001<br/>ESTADO: EN FUGA</div><div class="art-stamp">NO MIRES<br/>ATRÁS</div></div>
+</div><div class="hero-footer"><span>▰ SEÑAL DE EMERGENCIA / ZONA RESTRINGIDA</span><span>DESPLÁZATE PARA EXPLORAR ↓</span></div>
+</section>
+<section aria-label="Selección de videojuegos: Juego 1 y Juego 2" class="mission-control" id="seleccionar-juego">
+<div class="container command-center">
+<div class="command-meta"><span class="command-index">01 / SELECCIÓN DE VIDEOJUEGOS</span><span class="command-proof"><span class="command-light"></span> 2 EXPERIENCIAS · 1 MISMO PORTAL</span></div>
+<div class="command-header">
+<div class="command-identity"><span>DESARROLLADOR / PORTAFOLIO</span><h2>PABLO ALEJANDRO<br/><em>ZACONETA GUANCA</em></h2><p>Selecciona el videojuego. Los enlaces te llevarán a su sección de ejecución, sin abrir otras pestañas.</p></div>
+<div aria-hidden="true" class="command-symbol"><b>02</b><span>MISIONES<br/>DISPONIBLES</span></div>
+</div>
+<div aria-label="Ir a la sección de un videojuego" class="command-game-grid" role="group">
+<a aria-label="Ir a la sección Juego 1 Carrera Infinita 3D" class="command-game command-runner" href="#jugar"><span class="command-game-number">01 / RUNNER 3D</span><strong>ENLACE JUEGO 1</strong><span class="command-game-sub">CARRERA INFINITA · CIUDAD SANGRIENTA</span><span aria-hidden="true" class="command-game-arrow">↘</span></a>
+<a aria-label="Ir a la sección Juego 2 Laberinto 3D" class="command-game command-maze" href="#laberinto-jugar"><span class="command-game-number">02 / LABERINTO 3D</span><strong>ENLACE JUEGO 2</strong><span class="command-game-sub">LABERINTO DEL HORROR · 36 PUNTOS</span><span aria-hidden="true" class="command-game-arrow">↘</span></a>
+</div>
+<div class="command-foot"><span aria-hidden="true" class="command-flowline"></span><p>↓ ELIGE UN JUEGO · DESPLÁZATE A SU SECCIÓN · PRESIONA START</p><span aria-hidden="true" class="command-flowline"></span></div>
+</div>
+</section><section aria-labelledby="play-title" class="section play-section" id="seccion-runner">
+<div aria-hidden="true" class="play-backdrop"></div>
+<div class="container play-content"><div aria-label="Identificador del Juego 01" class="mission-heading-row"><span class="mission-heading-bar"></span><span>ÁREA DE JUEGO 01 / INICIO BAJO DEMANDA</span><span class="mission-heading-bar"></span></div>
+<div class="play-intro">
+<span class="section-no">02 / SECCIÓN JUEGO 1 · CARRERA INFINITA 3D</span>
+<h2 id="play-title">JUEGO 1 · CARRERA <em>INFINITA</em></h2>
+<p>Primero presiona START, ubicado sobre el juego. Después juega en este mismo recuadro con el teclado.</p>
+</div>
+<div aria-label="Control de inicio del Juego 1" class="launch-panel runner-launch-panel" id="jugar">
+<div class="launch-copy"><span class="launch-badge">MISIÓN 01 · RUNNER 3D</span><strong>CORRE POR LA CIUDAD DESOLADA</strong><small>Haz clic en START para activar el visor del Juego 1. No se inicia automáticamente.</small></div>
+<button aria-controls="game-frame" class="start-control start-control-runner" id="start-game" type="button">▶ START · JUEGO 1</button>
+</div>
+<div aria-label="Área de juego de Ciudad Sangrienta" class="game-shell" id="game-shell">
+<div class="game-topbar">
+<span class="game-live"><span aria-hidden="true" class="status-dot"></span> SECTOR CERO <span class="game-topbar-divider">//</span> RUNNER URBANO</span>
+<span aria-live="polite" id="game-state">SISTEMA EN ESPERA</span>
+</div>
+<div class="game-stage" id="game-stage">
+<div aria-hidden="true" class="game-vignette"></div>
+<div aria-hidden="true" class="game-drip"></div>
+<div class="game-cover" id="game-cover">
+<div class="game-cover-inner">
+<span class="game-warning">⚠ ADVERTENCIA / ZONA RESTRINGIDA</span>
+<h3>NO HAY <span>SALIDA</span></h3>
+<p>Entra en la ciudad desolada, esquiva lo que se cruce en tu camino y supera tu propio récord.</p>
+<div aria-hidden="true" class="awaiting-start">● ESPERANDO ORDEN DE INICIO</div>
+<small>Presiona START, ubicado encima del visor, para comenzar.</small>
+</div>
+</div>
+<iframe allow="fullscreen; autoplay; gamepad" allowfullscreen="" class="game-iframe" data-src="https://aquamarine-pothos-2552f7.netlify.app/" id="game-frame" referrerpolicy="strict-origin-when-cross-origin" tabindex="0" title="Runner Urbano - videojuego Unity WebGL integrado"></iframe>
+<div aria-live="polite" class="game-loading" hidden="" id="game-loading" role="status">
+<div aria-hidden="true" class="game-loader"></div>
+<strong>ENTRANDO EN LA CIUDAD...</strong>
+<span>Descargando la experiencia Unity WebGL</span>
+</div>
+</div>
+<div class="game-toolbar">
+<div class="game-control-guide"><kbd>↑</kbd> SALTAR <span class="toolbar-separator">·</span> <kbd>↓</kbd> AGACHARSE <span class="toolbar-separator">·</span> HAZ CLIC EN EL JUEGO PARA ACTIVAR LAS TECLAS</div>
+<div class="game-buttons">
+<button aria-label="Expandir el juego a pantalla completa" class="game-tool-btn" disabled="" id="fullscreen-game" type="button">⛶ PANTALLA COMPLETA</button>
+<button aria-label="Volver a cargar el juego" class="game-tool-btn" disabled="" id="reload-game" type="button">↻ REINICIAR CARGA</button>
+<button aria-label="Cerrar el juego integrado" class="game-tool-btn game-stop" disabled="" id="stop-game" type="button">✕ CERRAR</button>
+</div>
+</div>
+</div>
+<div class="requirements"><span>✓ Juego integrado en la página</span><span>✓ Navegador con WebGL</span><span>✓ Conexión a Internet</span><span>✓ Teclado recomendado</span></div>
+<p class="play-note">Para usar las flechas, haz clic dentro del visor después de pulsar START. Ambos juegos aparecen únicamente en este portal y necesitan Internet y WebGL. Si un servidor remoto impide su incrustación, se deberán alojar los archivos Unity WebGL dentro de este proyecto. La ambientación exterior no modifica las texturas internas del videojuego.</p>
+</div>
+</section><section aria-label="Zona de ejecución del Juego 2" class="maze-universe maze-live-zone"><div aria-labelledby="maze-play-title" class="maze-play section" id="seccion-laberinto"><div class="container"><div aria-label="Identificador del Juego 02" class="mission-heading-row"><span class="mission-heading-bar"></span><span>ÁREA DE JUEGO 02 / INICIO BAJO DEMANDA</span><span class="mission-heading-bar"></span></div>
+<div class="maze-section-head maze-play-intro"><span class="maze-overline">03 / SECCIÓN JUEGO 2 · LABERINTO 3D</span><h3 id="maze-play-title">JUEGO 2 · <em>LABERINTO DEL HORROR</em></h3><p>Recoge 36 puntos y escapa de dos enemigos. Para iniciar, pulsa START encima del visor. El juego se carga aquí mismo.</p></div>
+<div aria-label="Control de inicio del Juego 2" class="launch-panel maze-launch-panel" id="laberinto-jugar">
+<div class="launch-copy"><span class="launch-badge">MISIÓN 02 · LABERINTO 3D</span><strong>EL LABERINTO TE ESTÁ ESPERANDO</strong><small>Presiona START para activar el Juego 2 dentro de su área. No se ejecutará al entrar al portal.</small></div>
+<button aria-controls="maze-game-frame" class="start-control start-control-maze" id="maze-start-game" type="button">▶ START · JUEGO 2</button>
+</div>
+<div aria-label="Área de juego integrada de Ciudad Sangrienta — Laberinto 3D" class="game-shell maze-game-shell" id="maze-game-shell"><div class="game-topbar"><span class="game-live"><span aria-hidden="true" class="status-dot"></span> ZONA DE CONTENCIÓN <span class="game-topbar-divider">//</span> LABERINTO 3D</span><span aria-live="polite" id="maze-game-state">ESPERANDO INSTRUCCIONES</span></div>
+<div class="game-stage maze-game-stage"><div aria-hidden="true" class="game-vignette"></div><div aria-hidden="true" class="game-drip"></div><div class="maze-game-cover game-cover" id="maze-game-cover"><div class="game-cover-inner"><span class="game-warning">⚠ PROTOCOLO DE FUGA · 36 PUNTOS</span><h4>ENTRA AL <span>LABERINTO</span></h4><p>Dos enemigos rastrean tus movimientos. Recoge todos los puntos, desbloquea la salida y escapa antes de que te alcancen.</p><div aria-hidden="true" class="awaiting-start awaiting-maze">● ESPERANDO ORDEN DE INICIO</div><small>Presiona START, ubicado encima del visor, para comenzar.</small></div></div>
+<iframe allow="fullscreen; autoplay; gamepad" allowfullscreen="" class="game-iframe" data-src="https://illustrious-blancmange-930e81.netlify.app/" id="maze-game-frame" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" tabindex="0" title="Ciudad Sangrienta Unidad 3 - laberinto 3D Unity WebGL integrado"></iframe><div aria-live="polite" class="game-loading" hidden="" id="maze-game-loading" role="status"><div aria-hidden="true" class="game-loader"></div><strong>ABRIENDO LAS PUERTAS...</strong><span>Iniciando el visor Unity WebGL</span></div></div>
+<div class="game-toolbar"><div class="game-control-guide">DIRECCIÓN <kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd><span class="toolbar-separator">·</span> REINICIAR <kbd>R</kbd><span class="toolbar-separator">·</span> HAZ CLIC DENTRO DEL JUEGO</div><div class="game-buttons"><button class="game-tool-btn" disabled="" id="maze-fullscreen-game" type="button">⛶ PANTALLA COMPLETA</button><button class="game-tool-btn" disabled="" id="maze-reload-game" type="button">↻ RECARGAR</button><button class="game-tool-btn game-stop" disabled="" id="maze-stop-game" type="button">✕ CERRAR</button></div></div>
+</div>
+<div class="maze-requirements"><span>✓ Navegador de escritorio con WebGL</span><span>✓ Teclado con flechas</span><span>✓ Internet para cargar la build</span></div>
+<p class="maze-embed-note">El laberinto se presenta exclusivamente en esta sección. Para mover al personaje, haz clic dentro del juego y usa las flechas. La descarga de la build depende del servidor Unity WebGL y requiere Internet. Si el servidor bloquea la incrustación, será necesario integrar una copia autorizada de la build en el proyecto. La estética de esta sección no altera la escena Unity remota.</p>
+</div></div></section><section aria-label="Información completa de los videojuegos" class="archive-intro" id="explorar"><div class="container archive-intro-inner">
+<div><span class="section-no">04 / DOCUMENTACIÓN Y PRESENTACIÓN</span><h2>CONOCE LOS <em>DOS MUNDOS.</em></h2><p>Explora las historias, el personaje, las mecánicas, las reglas, los mapas y la información técnica de los dos videojuegos.</p></div>
+<div class="archive-links"><a href="#historia">↗ ARCHIVO JUEGO 1 / RUNNER</a><a href="#laberinto">↗ ARCHIVO JUEGO 2 / LABERINTO</a></div>
+</div></section>
+<section class="section story-section" id="historia"><div class="container">
+<div class="section-heading reveal"><span class="section-no">01 / HISTORIA</span><h2>UNA CIUDAD <em>SIN SALIDA.</em></h2><p>Una historia de supervivencia entre avenidas desiertas, luces rojas y una amenaza que se acerca con cada segundo.</p></div>
+<div class="story-layout"><div class="story-visual reveal"><img alt="Ilustración de una avenida nocturna desolada con edificios destruidos y niebla roja" src="assets/ciudad-desolada.svg"/><span class="image-caption">ARCHIVO VISUAL // SECTOR CERO</span></div><div class="chapters reveal"><article><small>CAPÍTULO 01 / EL SILENCIO</small><h3>La última avenida</h3><p>El corredor aparece solo en una ciudad urbana distópica. Los edificios se levantan sobre calles abandonadas y las señales de alarma anuncian que la zona ya no es segura.</p></article><article><small>CAPÍTULO 02 / LA PERSECUCIÓN</small><h3>No hay tiempo para detenerse</h3><p>Su única opción es avanzar. Barricadas, cajas y estructuras elevadas surgen inesperadamente en el camino. Cada obstáculo exige una reacción inmediata.</p></article><article><small>CAPÍTULO 03 / RESISTENCIA</small><h3>Sobrevive un segundo más</h3><p>La carrera se acelera; esquivar se vuelve más difícil. El objetivo es sobrevivir el mayor tiempo posible, acumular puntos y superar el récord.</p></article><article><small>CAPÍTULO 04 / DESTINO</small><h3>La ciudad decide</h3><p>Si se agotan las vidas, la carrera termina. Si el corredor resiste, su puntuación seguirá creciendo y podrá marcar una nueva hazaña.</p></article></div></div>
+</div></section>
+<section class="section character-section" id="personaje"><div class="container"><div class="section-heading reveal"><span class="section-no">02 / PROTAGONISTA</span><h2>EL ROSTRO DEL <em>CAOS.</em></h2><p>Un corredor imposible de confundir: una sonrisa perturbadora, cabello verde eléctrico y el instinto de seguir adelante.</p></div>
+<div class="character-grid"><div class="character-img reveal"><span class="portrait-code">SUJETO 001 / CLASIFICADO</span><img alt="Modelo visual del protagonista de estilo cartoon 3D" src="assets/protagonista.png"/><span class="portrait-bottom">CORREDOR URBANO // ESTADO ACTIVO</span></div><div class="character-info reveal"><span class="red-tag">FICHA DEL SUJETO</span><h3>EL CORREDOR<br/><span>DE LA CIUDAD</span></h3><p>Un personaje de estética <strong>Cartoon 3D</strong> que contrasta con la oscuridad del escenario. Su cabellera verde, el rostro expresivo, el chaleco, los pantalones cargo y las botas construyen una silueta reconocible en plena carrera.</p><div class="profile-row"><span>ROL</span><b>Protagonista / corredor urbano</b></div><div class="profile-row"><span>HABILIDADES</span><b>Correr, saltar y agacharse</b></div><div class="profile-row"><span>ESTILO</span><b>Cartoon 3D / terror urbano</b></div><div class="profile-row"><span>OBJETIVO</span><b>Sobrevivir y romper el récord</b></div><p class="note">Arte del protagonista proporcionado por el equipo.</p></div></div>
+</div></section>
+<section class="section mechanics-section" id="mecanicas"><div class="container"><div class="section-heading reveal"><span class="section-no">03 / MECÁNICAS</span><h2>CADA SEGUNDO <em>CUENTA.</em></h2><p>El personaje corre automáticamente. Tus reflejos deciden cuánto dura la huida.</p></div>
+<div class="mechanics-grid"><div class="mechanic-card reveal"><span class="card-icon">↗</span><small>01 / MOVIMIENTO</small><h3>CARRERA CONTINUA</h3><p>El protagonista avanza automáticamente por la avenida, sin detenerse.</p></div><div class="mechanic-card reveal"><span class="card-icon">↑</span><small>02 / OBSTÁCULO BAJO</small><h3>SALTO</h3><p>Presiona la flecha arriba para saltar cajas, barricadas y bloques de construcción.</p></div><div class="mechanic-card reveal"><span class="card-icon">↓</span><small>03 / OBSTÁCULO ALTO</small><h3>AGACHARSE</h3><p>Presiona la flecha abajo para pasar bajo estructuras, barras y señales elevadas.</p></div><div class="mechanic-card reveal"><span class="card-icon">⚠</span><small>04 / AMENAZAS</small><h3>AZAR Y COLISIONES</h3><p>Los obstáculos aparecen en intervalos variables. Una colisión puede costarte una vida.</p></div><div class="mechanic-card reveal"><span class="card-icon">◈</span><small>05 / PROGRESIÓN</small><h3>MÁS VELOCIDAD</h3><p>A medida que pasa el tiempo, el ritmo aumenta y el margen de reacción disminuye.</p></div><div class="mechanic-card reveal"><span class="card-icon">✕</span><small>06 / FINAL DE PARTIDA</small><h3>RÉCORD O DERROTA</h3><p>La puntuación crece con la supervivencia. Sin vidas, aparece el final de la partida.</p></div></div>
+<div class="controls reveal"><div><span class="section-no">CONTROLES / TECLADO</span><h3>NO TE DETENGAS.</h3></div><div class="key-pair"><kbd>↑</kbd><span>SALTAR<br/><small>Obstáculos bajos</small></span></div><div class="key-pair"><kbd>↓</kbd><span>AGACHARSE<br/><small>Obstáculos altos</small></span></div><p>Controles definidos en la Evaluación 2. Las teclas adicionales dependen de la compilación publicada.</p></div>
+</div></section>
+<section class="section data-section" id="datos"><div class="container"><div class="section-heading reveal"><span class="section-no">04 / INFORMACIÓN DEL PROYECTO</span><h2>EL JUEGO EN <em>DATOS.</em></h2><p>Ficha técnica, reglas esenciales y ciclo de supervivencia.</p></div>
+<div class="data-grid"><div class="data-number reveal"><strong>3D</strong><span>ENTORNO URBANO</span></div><div class="data-number reveal"><strong>02</strong><span>TIPOS DE OBSTÁCULO</span></div><div class="data-number reveal"><strong>∞</strong><span>CARRERA CONTINUA</span></div><div class="data-number reveal"><strong>01</strong><span>JUGADOR</span></div></div>
+<div class="information-grid"><div class="info-box reveal"><h3>FICHA TÉCNICA <span>// 01</span></h3><dl><div><dt>Nombre provisional</dt><dd>Carrera Infinita 3D – Ciudad Urbana Distópica</dd></div><div><dt>Género</dt><dd>Endless runner 3D / arcade</dd></div><div><dt>Motor</dt><dd>Unity</dd></div><div><dt>Plataforma</dt><dd>Navegador / Unity WebGL</dd></div><div><dt>Perspectiva</dt><dd>Tercera persona fija o lateral</dd></div><div><dt>Ambientación</dt><dd>Ciudad nocturna distópica</dd></div><div><dt>Objetivo</dt><dd>Mayor puntuación y récord personal</dd></div></dl></div><div class="info-box loop-box reveal"><h3>CICLO DE JUEGO <span>// 02</span></h3><ol><li><b>01 / CORRE</b><span>Avanza por la ciudad de forma automática.</span></li><li><b>02 / IDENTIFICA</b><span>Distingue entre obstáculos bajos y altos.</span></li><li><b>03 / REACCIONA</b><span>Salta o agáchate en el momento preciso.</span></li><li><b>04 / SOBREVIVE</b><span>Acumula puntos y supera tu mejor marca.</span></li></ol><div class="warning-note">⚠ La guía de Evaluación 2 no fija un número definitivo de vidas ni una puntuación objetivo específica; esos valores se verifican dentro del juego.</div></div></div>
+</div></section>
+<!-- SEGUNDA EXPERIENCIA: UNIDAD 3 — misma ambientación del proyecto original -->
+<section aria-labelledby="maze-title" class="maze-universe" id="laberinto">
+<div aria-hidden="true" class="maze-blood-edge"></div>
+<div class="maze-hero section">
+<div aria-hidden="true" class="maze-atmosphere"></div>
+<div class="container maze-hero-grid">
+<div class="maze-hero-copy reveal">
+<div class="maze-breadcrumb"><span aria-hidden="true" class="maze-pulse"></span> EXPEDIENTE 002 <span>/</span> EVALUACIÓN UNIDAD 3 <span>/</span> UNITY WEBGL</div>
+<div class="maze-tag">NUEVA EXPERIENCIA · LABERINTO 3D</div>
+<h2 id="maze-title">LABERINTO<br/><span>DEL HORROR</span></h2>
+<p class="maze-manifesto">36 PUNTOS. 2 CAZADORES.<br/>1 SOLA SALIDA.</p>
+<p class="maze-description">La ciudad desolada ahora es una trampa de callejones sin salida. Recorre el laberinto, recoge los 36 puntos y desbloquea la puerta antes de que los enemigos te encuentren.</p>
+<div class="maze-hero-actions"><a class="btn maze-primary-btn" href="#laberinto-jugar">▶ IR AL JUEGO 2</a><a class="btn maze-ghost-btn" href="#laberinto-historia">EXPLORAR LA MISIÓN ↓</a></div>
+<div class="maze-hero-mini"><span><b>36</b> PUNTOS</span><span><b>02</b> ENEMIGOS</span><span><b>01</b> SALIDA</span></div>
+</div>
+<div class="maze-hero-visual reveal">
+<div class="maze-visual-top"><span>CIUDAD SANGRIENTA // SECTOR 02</span><span class="maze-red-live">● ALERTA ACTIVA</span></div>
+<img alt="Plano ilustrado del laberinto de 11 por 9 celdas con 36 puntos amarillos, protagonista verde, dos enemigos y puerta de salida" loading="lazy" src="assets/plano-laberinto.svg"/>
+<div class="maze-visual-bottom"><span><i class="legend-dot legend-player"></i> JUGADOR</span><span><i class="legend-dot legend-enemy"></i> CAZADORES</span><span><i class="legend-dot legend-points"></i> PUNTOS</span></div>
+<span aria-hidden="true" class="maze-side-label">ZONA CONTAMINADA // ÁREA RESTRINGIDA</span>
+</div>
+</div>
+<div aria-hidden="true" class="maze-ticker"><div>PELIGRO EN EL LABERINTO <span>✕</span> NO TE DEJES VER <span>✕</span> CADA PUNTO IMPORTA <span>✕</span> NO HAY SEGUNDA OPORTUNIDAD <span>✕</span></div></div>
+</div>
+<nav aria-label="Secciones del juego Laberinto 3D" class="maze-subnav"><div class="container maze-subnav-inner"><span class="maze-subnav-title">LABERINTO / 002</span><a href="#laberinto-historia">Historia</a><a href="#laberinto-personaje">Personaje</a><a href="#laberinto-mecanicas">Mecánicas</a><a href="#laberinto-datos">Datos</a><a class="maze-subnav-play" href="#laberinto-jugar">▶ Ir al juego 2</a></div></nav>
+<div class="maze-story section" id="laberinto-historia">
+<div class="container">
+<div class="maze-section-head reveal"><span class="maze-overline">02.01 / HISTORIA</span><h3>ATRAPADO EN EL <em>SECTOR CERO.</em></h3><p>La carrera no terminó. El corredor encontró refugio entre los edificios destruidos, pero las calles ahora forman un laberinto vigilado.</p></div>
+<div class="maze-chapter-grid">
+<article class="maze-chapter reveal"><span class="chapter-digit">01</span><span class="maze-chapter-type">ENTRADA / SIN REGRESO</span><h4>LA CIUDAD SE CIERRA</h4><p>Tras escapar de las avenidas, el protagonista llega a una red de pasillos rodeados de muros, humo y luces de emergencia. La única ruta de salida permanece bloqueada.</p></article>
+<article class="maze-chapter reveal"><span class="chapter-digit">02</span><span class="maze-chapter-type">MISIÓN / RECOLECTAR</span><h4>36 SEÑALES PERDIDAS</h4><p>Para abrir la puerta debe recorrer cada zona segura y recoger los 36 puntos del laberinto. Cada punto vale 10 y acerca al corredor a su escape.</p></article>
+<article class="maze-chapter reveal"><span class="chapter-digit">03</span><span class="maze-chapter-type">AMENAZA / CONTACTO LETAL</span><h4>DOS SOMBRAS TE BUSCAN</h4><p>Dos enemigos patrullan rutas fijas. Si consiguen verte en línea recta, te perseguirán por los pasillos. Un solo contacto termina la partida.</p></article>
+<article class="maze-chapter reveal"><span class="chapter-digit">04</span><span class="maze-chapter-type">FINAL / ESCAPE</span><h4>LA ÚLTIMA PUERTA</h4><p>Cuando no queden puntos, la salida situada al norte se abre. Llega hasta ella sin ser atrapado para conseguir la victoria.</p></article>
+</div>
+</div>
+</div>
+<div class="maze-character section" id="laberinto-personaje">
+<div class="container maze-character-grid">
+<div class="maze-character-frame reveal"><div aria-hidden="true" class="maze-portrait-radar"></div><img alt="Personaje principal del juego: cabello verde, chaleco y vestimenta oscura, estilo Cartoon 3D" loading="lazy" src="assets/protagonista.png"/><span class="maze-frame-top">UNIDAD // 001 · EL SOBREVIVIENTE</span><span class="maze-frame-bottom">ESTADO: EN FUGA <span>◉</span> SEÑAL LOCALIZADA</span></div>
+<div class="maze-character-text reveal"><span class="maze-overline">02.02 / PROTAGONISTA</span><h3>EL MISMO ROSTRO.<br/><em>OTRO INFIERNO.</em></h3><p>El personaje de la carrera urbana regresa al laberinto: cabello verde eléctrico, sonrisa inquietante y ropa oscura. Su estilo Cartoon 3D contrasta con el entorno tenebroso de la ciudad.</p>
+<div class="maze-character-attributes"><div><span>FUNCIÓN</span><strong>Explorar y recoger puntos</strong></div><div><span>MOVIMIENTO</span><strong>Cuatro direcciones · vista superior</strong></div><div><span>ESTADOS</span><strong>Quieto · Correr · Morir</strong></div><div><span>RIESGO</span><strong>Un contacto = fin del juego</strong></div></div>
+<div class="maze-character-warning">¡ALERTA! No puedes atravesar paredes. Cada giro puede dejarte frente a un perseguidor.</div>
+</div>
+</div>
+</div>
+<div class="maze-mechanics section" id="laberinto-mecanicas">
+<div class="container"><div class="maze-section-head reveal"><span class="maze-overline">02.03 / MECÁNICAS</span><h3>EL LABERINTO <em>TE OBSERVA.</em></h3><p>Una experiencia de exploración, recolección y sigilo inspirada en Pac-Man, trasladada al universo 3D de Ciudad Sangrienta.</p></div>
+<div class="maze-mechanic-grid">
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">✦</span><span class="maze-card-order">01 / RECOLECCIÓN</span><h4>36 PUNTOS</h4><p>Busca los puntos amarillos. Cada uno vale +10, desaparece al recogerlo y reduce el contador de restantes.</p></article>
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">◆</span><span class="maze-card-order">02 / NAVEGACIÓN</span><h4>LABERINTO 3D</h4><p>11 columnas × 9 filas. Camina por pasillos abiertos, gira en las esquinas y evita chocar contra los muros.</p></article>
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">◎</span><span class="maze-card-order">03 / PATRULLA</span><h4>DOS CAZADORES</h4><p>Cada enemigo recorre cuatro puntos de vigilancia usando búsqueda de caminos alrededor de las paredes.</p></article>
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">⌁</span><span class="maze-card-order">04 / DETECCIÓN</span><h4>RAYCASTING</h4><p>Un enemigo te detecta si hay visión directa a 8 unidades o menos. Si un muro bloquea el rayo, no te ve.</p></article>
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">⇢</span><span class="maze-card-order">05 / PERSECUCIÓN</span><h4>NO MIRES ATRÁS</h4><p>Al detectar al jugador, el enemigo abandona la patrulla y lo sigue. Cuando pierde visión, vuelve a su ruta.</p></article>
+<article class="maze-mechanic-card reveal"><span class="maze-mech-icon">⛩</span><span class="maze-card-order">06 / OBJETIVO FINAL</span><h4>ESCAPA O MUERE</h4><p>Recoge los 36 puntos para abrir la salida. Si alcanzas la puerta, ganas; si te toca un enemigo, pierdes.</p></article>
+</div>
+<div class="maze-control-panel reveal"><div class="maze-control-title"><span class="maze-overline">CONTROLES / PC</span><strong>MUÉVETE.<br/>NO TE DEJES ATRAPAR.</strong></div><div aria-label="Teclas de flecha arriba, izquierda, abajo y derecha" class="maze-cross-keys"><kbd class="maze-key-up">↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd></div><div class="maze-control-explain"><strong>FLECHAS DEL TECLADO</strong><span>Mover al personaje en las cuatro direcciones, una a la vez.</span><div class="maze-reset"><kbd>R</kbd><span>Reiniciar la partida en cualquier momento</span></div></div></div>
+</div>
+</div>
+<div class="maze-information section" id="laberinto-datos">
+<div class="container"><div class="maze-section-head reveal"><span class="maze-overline">02.04 / DATOS E INFOGRAFÍA</span><h3>LAS REGLAS DE <em>SUPERVIVENCIA.</em></h3><p>Los indicadores y posiciones corresponden a la Evaluación de Unidad 3. Las cifras describen el diseño solicitado para el videojuego.</p></div>
+<div class="maze-numbers"><div class="maze-number reveal"><strong>36</strong><span>PUNTOS A RECOGER</span></div><div class="maze-number reveal"><strong>+10</strong><span>POR CADA PUNTO</span></div><div class="maze-number reveal"><strong>02</strong><span>ENEMIGOS</span></div><div class="maze-number reveal"><strong>8</strong><span>UNIDADES DE VISIÓN</span></div><div class="maze-number reveal"><strong>11×9</strong><span>CELDAS DEL MAPA</span></div></div>
+<div class="maze-map-layout"><div class="maze-map-panel reveal"><div class="maze-panel-header"><span>MAPA TÁCTICO // SECTOR 02</span><span>PLANO DE REFERENCIA</span></div><img alt="Infografía del plano 11 por 9 con puntos de recolección, el jugador inicial F8, enemigos E5 y G5 y salida F1" loading="lazy" src="assets/plano-laberinto.svg"/><div class="maze-map-note"><span><i class="legend-dot legend-player"></i> JUGADOR</span><span><i class="legend-dot legend-points"></i> PUNTOS</span><span><i class="legend-dot legend-enemy"></i> ENEMIGOS</span><span><i class="legend-dot legend-exit"></i> SALIDA</span></div></div>
+<div class="maze-facts-panel reveal"><h4>FICHA TÉCNICA <small>// 002</small></h4><dl><div><dt>Género</dt><dd>Laberinto / arcade 3D</dd></div><div><dt>Inspiración</dt><dd>Pac-Man, con personaje propio</dd></div><div><dt>Motor</dt><dd>Unity / WebGL</dd></div><div><dt>Cámara</dt><dd>Vista superior</dd></div><div><dt>Movimiento</dt><dd>3 unidades por segundo</dd></div><div><dt>Patrulla enemiga</dt><dd>2,5 unidades por segundo</dd></div><div><dt>Persecución</dt><dd>3,5 unidades por segundo</dd></div><div><dt>Visión</dt><dd>Hasta 8 unidades, sin muros</dd></div><div><dt>Salida</dt><dd>F1, cerrada hasta completar 36</dd></div><div><dt>Inicio del jugador</dt><dd>F8, tras la entrada F9</dd></div></dl><div class="maze-rules-caption">VICTORIA: 36 puntos + llegar a la salida.<br/>DERROTA: contacto con cualquiera de los 2 enemigos.</div></div></div>
+<div aria-label="Comportamiento técnico de los enemigos" class="maze-ai-info reveal">
+<div class="maze-ai-head"><span class="maze-overline">INTELIGENCIA ARTIFICIAL / RUTAS DE PATRULLA</span><strong>ESCAPAR EXIGE ANTICIPAR SUS MOVIMIENTOS.</strong></div>
+<div class="maze-ai-routes"><article><span class="ai-enemy-id ai-enemy-one">ENEMIGO 01 · ROJO</span><b>E5 <span>→</span> E6 <span>→</span> B6 <span>→</span> B2 <span>→</span> E2</b><p>Patrulla continua sobre su ruta de cuatro puntos y vuelve al inicio.</p></article><article><span class="ai-enemy-id ai-enemy-two">ENEMIGO 02 · VIOLETA</span><b>G5 <span>→</span> G6 <span>→</span> J6 <span>→</span> J2 <span>→</span> G2</b><p>Comparte la regla de patrulla, pero cubre la zona opuesta del laberinto.</p></article></div>
+<p class="maze-ai-footnote">La navegación de los enemigos se basa en <strong>NavMesh / NavMeshAgent</strong> para rodear paredes y en <strong>raycasting</strong> para detectar al jugador. Recolección completa: <strong>36 × 10 = 360 puntos</strong> por los puntos del mapa.</p>
+</div>
+<div class="maze-process reveal"><div><span>01</span><b>EXPLORA</b><small>Recorre el laberinto</small></div><i aria-hidden="true">→</i><div><span>02</span><b>RECOGE</b><small>Completa los 36 puntos</small></div><i aria-hidden="true">→</i><div><span>03</span><b>EVITA</b><small>Escapa de la visión enemiga</small></div><i aria-hidden="true">→</i><div><span>04</span><b>HUYE</b><small>Alcanza la puerta F1</small></div></div>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="container footer-layout"><div><b>✕ CIUDAD SANGRIENTA</b><p>Dos videojuegos Unity WebGL: Carrera Infinita 3D y Laberinto 3D · Game Development · 2026</p><p>Desarrollador del portal: <strong>Pablo Alejandro Zaconeta Guanca</strong></p><p>Equipo de los videojuegos: Harold Abdel Carpio Santander · Alexander Condori Nina · Pablo Alejandro Zaconeta Guanca</p></div><div class="footer-links"><a href="#jugar">RUNNER 3D</a><a href="#laberinto-jugar">LABERINTO 3D</a><a href="#inicio">VOLVER ARRIBA ↑</a></div></div></footer>
+<script src="script.js"></script>
+</body></html>
